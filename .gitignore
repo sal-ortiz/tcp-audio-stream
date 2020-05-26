@@ -1,0 +1,5 @@
+# editor artifacts
+*.sw*
+
+# environment artifacts
+node_modules
