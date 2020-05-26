@@ -35,7 +35,15 @@ const outpEngine = new PortAudio.AudioIO({
 const server = new Server(outpEngine);
 const client = new Client(inpEngine);
 
-process.on('exit', server.stop.bind(server));       // cleanup
+function cleanup() {
+  console.log('TEST: cleaning up');
+
+  client.disconnect();
+  server.stop();
+}
+
+
+process.on('exit', cleanup);       // cleanup
 
 process.on('SIGINT', process.exit.bind(process));   // exit
 process.on('SIGUSR1', process.exit.bind(process));  // exit
