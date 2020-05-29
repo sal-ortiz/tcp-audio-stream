@@ -29,7 +29,7 @@ process.on('SIGUSR1', process.exit.bind(process));  // exit
 process.on('SIGUSR2', process.exit.bind(process));  // exit
 
 
-const host = process.argv[2].toString();  //'0.0.0.0';
+const host = process.argv[2].toString();  // '0.0.0.0';
 const port = parseInt(process.argv[3]);   // 29577;
 
 client.connect(host, port);
