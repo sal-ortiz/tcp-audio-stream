@@ -17,6 +17,7 @@ const inpEngine = new PortAudio.AudioIO({
     deviceId: -1, // default device
 
     highWaterMark: 1024,
+    framesPerBuffer: 16,
   },
 
 });
@@ -30,6 +31,7 @@ const outpEngine = new PortAudio.AudioIO({
     closeOnError: false,
 
     highWaterMark: 1024,
+    framesPerBuffer: 16,
   },
 
 });
@@ -61,4 +63,3 @@ const host = '0.0.0.0';
 server.start(host, port);
 
 client.connect(host, port);
-

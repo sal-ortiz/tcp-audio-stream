@@ -17,6 +17,7 @@ const outpEngine = new PortAudio.AudioIO({
     closeOnError: false,
 
     highWaterMark: 1024,
+    framesPerBuffer: 16,
   },
 
 });

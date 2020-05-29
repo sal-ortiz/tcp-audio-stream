@@ -16,6 +16,7 @@ const inpEngine = new PortAudio.AudioIO({
     deviceId: -1, // default device
 
     highWaterMark: 1024,
+    framesPerBuffer: 16,
   },
 
 });
