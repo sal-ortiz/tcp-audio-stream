@@ -14,6 +14,8 @@ const inpEngine = new PortAudio.AudioIO({
     sampleFormat: PortAudio.SampleFormat16Bit,
     sampleRate: 22000,
     deviceId: -1, // default device
+
+    highWaterMark: 1024,
   },
 
 });
