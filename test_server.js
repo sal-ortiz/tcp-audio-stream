@@ -15,6 +15,8 @@ const outpEngine = new PortAudio.AudioIO({
     sampleRate: 22000,
     deviceId: -1, // default device.
     closeOnError: false,
+
+    highWaterMark: 1024,
   },
 
 });
