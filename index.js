@@ -15,6 +15,8 @@ const inpEngine = new PortAudio.AudioIO({
     sampleFormat: PortAudio.SampleFormat16Bit,
     sampleRate: 22000,
     deviceId: -1, // default device
+
+    highWaterMark: 1024,
   },
 
 });
@@ -25,8 +27,9 @@ const outpEngine = new PortAudio.AudioIO({
     sampleFormat: PortAudio.SampleFormat16Bit,
     sampleRate: 22000,
     deviceId: -1, // default device.
-    closeOnError: true, // debug!
-    //closeOnError: false,
+    closeOnError: false,
+
+    highWaterMark: 1024,
   },
 
 });
@@ -55,7 +58,7 @@ const port = 29577;
 const host = '0.0.0.0';
 
 
-server.start(port, host);
+server.start(host, port);
 
 client.connect(host, port);
 

@@ -5,5 +5,5 @@
 # environment artifacts
 node_modules
 
-# logs
+# log files
 *.log

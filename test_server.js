@@ -14,8 +14,9 @@ const outpEngine = new PortAudio.AudioIO({
     sampleFormat: PortAudio.SampleFormat16Bit,
     sampleRate: 22000,
     deviceId: -1, // default device.
-    closeOnError: true, // debug!
-    //closeOnError: false,
+    closeOnError: false,
+
+    highWaterMark: 1024,
   },
 
 });
@@ -31,7 +32,7 @@ process.on('SIGUSR1', process.exit.bind(process));  // exit
 process.on('SIGUSR2', process.exit.bind(process));  // exit
 
 
-const host = process.argv[2].toString();  //'0.0.0.0';
+const host = process.argv[2].toString();  // '0.0.0.0';
 const port = parseInt(process.argv[3]);   // 29577;
 
-server.start(port, host);
+server.start(host, port);
