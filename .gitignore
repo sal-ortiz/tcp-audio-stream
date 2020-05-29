@@ -1,6 +1,7 @@
 # editor artifacts
 *.sw*
 *.un*
+*~
 
 # environment artifacts
 node_modules
