@@ -3,3 +3,6 @@
 
 # environment artifacts
 node_modules
+
+# log files
+*.log
