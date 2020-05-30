@@ -1,5 +1,5 @@
 {
-  "name": "flubaru",
+  "name": "tcp-audio-stream",
   "version": "0.0.1-alpha",
   "main": "index.js",
   "scripts": {
