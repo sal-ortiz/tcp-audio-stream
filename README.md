@@ -14,7 +14,7 @@ Be sure to import the _Naudiodon_ library as well:<br/>
 ## components
 The library has two main components, a [client](https://github.com/sal-ortiz/tcp-audio-stream/blob/master/lib/client.js) and a [server](https://github.com/sal-ortiz/tcp-audio-stream/blob/master/lib/server.js).
 
-The _single tcp-audio-stream_ library contains both components.
+The single _tcp-audio-stream_ library contains both components.
 ```
 const TcpAudioStream = require('tcp-audio-stream);
 
