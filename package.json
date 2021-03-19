@@ -1,6 +1,12 @@
 {
   "name": "tcp-audio-stream",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1",
+  "description": "a TCP-based server/client library for low-latency audio streaming",
+  "homepage": "https://github.com/sal-ortiz/tcp-audio-stream",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sal-ortiz/tcp-audio-stream"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
@@ -11,7 +17,6 @@
     "jasmine": "^3.5.0"
   },
   "dependencies": {
-    "nano-md5": "^1.0.5",
     "naudiodon": "^2.2.1"
   }
 }
